@@ -9,7 +9,7 @@ app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 app.set('views', './views')
 
-mysql.createConnection({
+const database = mysql.createConnection({
   host: 'pauliuspetrunin.lt',
   user: 'bit',
   password: 'kulokas',
